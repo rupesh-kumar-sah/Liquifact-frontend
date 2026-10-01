@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "eslint",
     "format:check": "prettier --check .",
     "format": "prettier --write .",
@@ -52,6 +52,12 @@
   },
   "overrides": {
     "postcss": "^8.5.24",
-    "sharp": "^0.35.3"
+    "sharp": "^0.35.3",
+    "eslint-plugin-import": {
+      "eslint": "$eslint"
+    },
+    "eslint-plugin-react": {
+      "eslint": "$eslint"
+    }
   }
 }
